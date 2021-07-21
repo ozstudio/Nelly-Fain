@@ -1,0 +1,66 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <script src="jquery/jquery.min.js"></script>
+    <link href="bootstrap-3.3.4/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="bootstrap-3.3.4/dist/js/bootstrap.min.js"></script>
+    <link href="customStyles.css" rel="stylesheet" />
+    <script src="customJquery.js"></script>
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="container-fluid">
+        <div class="logo">
+            <a href="/Default.aspx">
+            <img class="img-responsive" src="images/logo.jpg" />
+                </a>
+
+        </div>
+       <div class="">
+    <nav class="navbar navbar-default" role="navigation">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav" >
+             <li><a href="/contacts.aspx">צור קשר</a></li>
+             <li><a href="#">המלצות</a></li>
+             <li><a href="#">מאמרים</a></li>
+             <li><a href="/works.aspx">תיק עבודות</a></li>
+             <li><a href="#">תחומי פעילות</a></li>
+          <li><a href="/about.aspx">אודות</a></li>
+          <li class="active1"><a href="/default.aspx">דף הבית</a></li>
+
+
+        
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </nav>
+
+ </div>
+
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        <div class="footer">
+            <p> כל הזכויות שמורות 2016 ©</p>
+        </div>
+    </div>
+    </form>
+</body>
+</html>
